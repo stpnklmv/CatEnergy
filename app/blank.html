@@ -5,31 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/app.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>Cat Energy</title>
 </head>
 
 <body class="page__body">
-  <a class="logo" href="blank.html" href="#">
-    <img class="logo__img-desctop" src="img/dest/logo-desktop.svg" width="202" height="60">
+  <a class="logo" href="index.html" href="#">
+    <img class="logo__desktop" src="img/dest/logo-desktop.svg" width="202" height="60" alt="Cat Energy">
   </a>
-  <br>
+  <a class="logo" href="index.html" href="#">
+    <img class="logo__tablet" src="img/dest/logo-tablet.svg" width="174" height="52" alt="Cat Energy">
+  </a>
+  <div class="mobile-header-wrapper">
+    <a class="logo" href="index.html" href="#">
+      <img class="logo__mobile-pic" src="img/dest/logo-mobile-pic.svg" width="34" height="38"
+        alt="Изображение логотипа Cat Energy">
+    </a>
+    <a class="logo" href="index.html" href="#">
+      <img class="logo__mobile-text" src="img/dest/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy">
+    </a>
+    <button class="toggle-menu">
+      <span class="toggle-menu__center-line">Закрыть</span>
+    </button>
+  </div>
   <a class="btn btn_mobile" href="blank.html">
     Подобрать программу
   </a>
-  <br>
-  <a class="btn btn_desctop" href="blank.html">
+  <a class="btn btn_desktop" href="blank.html">
     Подобрать программу
   </a>
-  <br>
-  <div class="nav">
-    <ul>
-      <li>Главная</li>
-      <li>Каталог продукции</li>
-      <li>Подбор программы</li>
+  <nav class="page-header__nav nav">
+    <ul class="page-header__nav-list nav-list">
+      <li class="page-header__nav-item nav-list__item nav-list__item_active">
+        <a class="nav-list__link" href="#">Главная</a>
+      </li>
+      <li class="page-header__nav-item nav-list__item">
+        <a class="nav-list__link" href="#">Каталог продукции</a>
+      </li>
+      <li class="page-header__nav-item nav-list__item">
+        <a class="nav-list__link" href="#">Подбор программы</a>
+      </li>
     </ul>
-  </div>
+  </nav>
 </body>
 
 </html>
