@@ -7,15 +7,26 @@ $mobile: 767px;
 $tablet: 768px;
 $desktop: 1200px;
 
-.logo[href]:hover,
-.logo[href]:focus {
+.page-header__logo[href]:hover,
+.page-header__logo[href]:focus {
   opacity: 0.8;
   transition: 0.2s;
 }
 
-.logo[href]:active {
+.page-header__logo[href]:active {
   opacity: 0.6;
 }
+
+.page-header__logo_mobile-pic {
+  width: 34px;
+  height: 38px;
+}
+
+.page-header__logo_mobile-text {
+  width: 101px;
+  height: 18px;
+}
+
 
 .logo__desktop {
   display: block;
@@ -27,16 +38,6 @@ $desktop: 1200px;
   display: block;
   width: 174px;
   height: 52px;
-}
-
-.logo__mobile-pic {
-  width: 34px;
-  height: 38px;
-}
-
-.logo__mobile-text {
-  width: 101px;
-  height: 18px;
 }
 
 .toggle-menu {
