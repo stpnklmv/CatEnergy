@@ -1,0 +1,78 @@
+.program::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 305px;
+  width: 100%;
+  min-width: 320px;
+  background-image: url(../img/src/index-background-mobile-1.jpg);
+  background-color: #63a73a;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    left: auto;
+    right: 0;
+    background-image: url(../img/src/index-background-mobile-1.jpg);
+    background-color: #63a73a;
+    background-position-x: 0;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.program-title {
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+
+  @media (min-width: $tablet) {
+    margin-top: 62px;
+    margin-left: 87px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+  }
+}
+
+.program-text {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    margin-left: 88px;
+  }
+}
+
+.program-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 3px;
+}

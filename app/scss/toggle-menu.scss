@@ -1,0 +1,39 @@
+.toggle-menu {
+  position: relative;
+  width: 24px;
+  height: 16px;
+  background: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.toggle-menu__center-line {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  font-size: 0;
+}

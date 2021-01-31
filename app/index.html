@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.min.css">
   <title>Cat Energy</title>
 </head>
@@ -12,20 +14,15 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo_mobile-pic" src="img/dest/logo-mobile-pic.svg" width="34" height="38"
-            alt="Cat Energy">
+        <a class="page-header__logo logo">
+          <img class="logo__mobile" src="img/dest/logo-mobile.svg" width="190" height="38" alt="Cat Energy">
         </a>
-        <a class="page-header__logo">
-          <img class="page-header__logo_mobile-text" src="img/dest/logo-mobile-text.svg" width="101" height="18"
-            alt="Cat Energy">
-        </a>
-        <button class="page-header__logo toggle-menu" type="button">
+        <button class="page-header__toggle-menu toggle-menu" type="button">
           <span class="toggle-menu__center-line">Меню</span>
         </button>
         <nav class="page-header__nav nav">
           <ul class="page-header__nav-list nav__list">
-            <li class="nav__item nav__item_active">
+            <li class="nav__item nav__item--active">
               <a class="nav__link">Главная</a>
             </li>
             <li class="nav__item nav__item_mobile">
@@ -40,6 +37,12 @@
     </div>
   </header>
   <main class="main">
+    <section class="program container">
+      <h1 class="program-title">Функциональное <br>питание для котов</h1>
+      <p class="program-text">Занялся собой? Займись котом!</p>
+      <img class="program-img" src="img/dest/index-can-mobile-1.png" alt="Cat Energy (Курица, 500 грамм)">
+      <a class="btn" href="blank.html">Подобрать программу</a>
+    </section>
   </main>
   <footer class="footer">
   </footer>

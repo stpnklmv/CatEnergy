@@ -1,0 +1,21 @@
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 12px;
+
+  @media (min-width: $tablet) {
+    flex-wrap: nowrap;
+    padding-top: 54px;
+  }
+}
+
+.page-header__nav {
+  width: 100%;
+  margin-top: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}

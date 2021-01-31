@@ -1,106 +1,63 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
-@import "common";
-@import "styleguide";
 
-.container {
-  padding: 0 20px;
-  min-width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    min-width: $tablet;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: $desktop;
-  }
+// fonts
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/oswald-v35-latin_cyrillic-regular.eot');
+  src: local(''),
+    url('../fonts/oswald-v35-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/oswald-v35-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/oswald-v35-latin_cyrillic-regular.woff') format('woff'),
+    url('../fonts/oswald-v35-latin_cyrillic-regular.ttf') format('truetype'),
+    url('../fonts/oswald-v35-latin_cyrillic-regular.svg#Oswald') format('svg');
 }
 
-@media (min-width: $tablet) {
-  .toggle-menu {
-    display: none;
-  }
-}
-
-.page-header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 12px;
-
-  @media (min-width: $tablet) {
-    flex-wrap: nowrap;
-    padding-top: 54px;
-  }
-}
-
-.page-header__nav {
-  width: 100%;
-  margin-top: 16px;
-
-  @media (min-width: $tablet) {
-    margin: 0;
-  }
-}
-
-.nav {
-  font-family: "Oswald", sans-serif;
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet) {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-  }
+  src: url('../fonts/oswald-v35-latin_cyrillic-500.eot');
+  src: local(''),
+    url('../fonts/oswald-v35-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/oswald-v35-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/oswald-v35-latin_cyrillic-500.woff') format('woff'),
+    url('../fonts/oswald-v35-latin_cyrillic-500.ttf') format('truetype'),
+    url('../fonts/oswald-v35-latin_cyrillic-500.svg#Oswald') format('svg');
 }
 
-.nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+$arial: 'Arial',
+sans-serif;
 
-  @media (min-width: $tablet) {
-    text-align: right;
-  }
+$oswald: 'Oswald',
+'Arial',
+sans-serif;
+
+// border-box all
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.nav__item {
-  border-top: 1px solid #E6E6E6;
+// colors
+$color-accent: #68B738;
+$color-accent-hover: #5EAA2F;
 
-  &:last-child {
-    border-bottom: 1px solid #E6E6E6;
-  }
+// viewports
+$mobile: 767px;
+$tablet: 768px;
+$desktop: 1200px;
 
-  @media (min-width: $tablet) {
-    display: inline-block;
-    border: none;
-    margin-left: 33px;
+@import "container";
+@import "content-img";
+@import "btn";
+@import "visually-hidden";
 
-    &:last-child {
-      border: none;
-    }
-
-    &_active {
-      border-bottom: 2px solid #68B738;
-    }
-  }
-}
-
-.nav__link {
-  display: block;
-  padding: 22px;
-  text-decoration: none;
-  color: inherit;
-
-  @media (min-width: $tablet) {
-    padding: 0;
-    padding-bottom: 8px;
-
-  }
-}
+@import "page";
+@import "page-header";
+@import "logo";
+@import "nav";
+@import "toggle-menu";
+@import "program";
